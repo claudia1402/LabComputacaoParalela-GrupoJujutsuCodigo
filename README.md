@@ -1,0 +1,1 @@
+# LabComputacaoParalela-GrupoJujutsuCodigo
