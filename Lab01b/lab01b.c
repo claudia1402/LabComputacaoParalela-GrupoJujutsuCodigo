@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+
+#include <stdlib.h>
+
 void ex01() {
   
   printf("Exercicio 1 \n");
@@ -55,6 +58,7 @@ void ex02() {
 }
 
 void ex03() {
+  
   printf ("Exercicio 3\n");
   int valor;
   int m = 1;
@@ -65,19 +69,28 @@ void ex03() {
     printf("Digite um valor ímpar: ");
     scanf("%i", &valor);
   }
+  
+  int i;
+  int j;
+  int k;
+  int l = 0;
+  for (i = 1; i <= valor; i++) {
+    for (k = 0; k < l; k++ ) {
+      printf(" ");
+    }
 
-  for (int i = valor; i >= 1; i--) {
-    for (int j = 1; j <= m; j++) {
-      printf("  ");
-    }
-    for (int k = 0; k <= (2 * i - 1); k++) {
-      printf("%i ",i);
-    }
-    m++;
-    printf ("\n");  
+  printf ("%d ", i);
+  
+  for (j = i+1; j <= valor; j++) {
+    printf ("%d ", j);
   }
-printf("_____________________________________\n");
+  valor -= 1;
+  printf ("\n");
+  l += 2;
+  }
+  printf("_____________________________________\n");
 }
+
 
 int main(void) {
     ex01();
