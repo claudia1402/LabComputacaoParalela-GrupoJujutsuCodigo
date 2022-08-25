@@ -63,27 +63,31 @@ void ex03() {
   int valor;
   int m = 1;
   printf("Digite um valor ímpar: ");
+  //lendo o valor que o usuario inseriu
   scanf("%i", &valor);
   while (valor % 2 == 0) {
+    //caso o valor inserido seja par
     printf("Erro! Digite valores ímpares! \n");
     printf("Digite um valor ímpar: ");
     scanf("%i", &valor);
   }
-  
+  //variaveis inteiras
   int i;
   int j;
   int k;
   int l = 0;
+  //imprimindo os espaços entre numeros
   for (i = 1; i <= valor; i++) {
     for (k = 0; k < l; k++ ) {
       printf(" ");
     }
-
+  
   printf ("%d ", i);
   
   for (j = i+1; j <= valor; j++) {
     printf ("%d ", j);
   }
+  //decrementando para eliminar o ultimo elemento
   valor -= 1;
   printf ("\n");
   l += 2;
