@@ -10,3 +10,4 @@ atual que a matriz computada atribuído.
 A função possui os inteiros respectivos a cada nota com os valores atribuídos, e a declaração do inteiro da MA, ainda sem nehum valor atribuído. Em seguida, o valor atribuído a ela será o resultado da operação de média. Em seguida, para cada caso do resultado, a respectiva nota é apresentada. 
 
 ### Explicação do exercício 3
+A função lê o valor inserido pelo usuário, e caso seja inserido um valor par, é solicitado o valor novamente. A partir disso, cria-se a lógica para preencher valores em uma linha até o valor inserido, e em seguida há o decremento de valores dessa sequÊncia, tanto do lado esquerdo, quanto do lado direito.
