@@ -44,17 +44,11 @@ int main(int argc , char *argv[])
         int arr[n],sum[n];
   
         arr[0] = 1;
-  
-        // gerando a serie fatorial
-        // for (i=1 ; i<n; i++)
-        // {
-        //     arr[i] = arr[i-1]*k;
-        //     k++;
-        // }
 
-      for (i=0; n > 1; n = n -1) {
+        //loop para realizar cálculo do fatorial
+        for (i=0; n > 1; n = n -1) {
             arr[0] = arr[0]*n;
-      }
+        }
 
       printf("O fatorial de %d e igual a %d\n",atoi(argv[1]),arr[0]);
 
