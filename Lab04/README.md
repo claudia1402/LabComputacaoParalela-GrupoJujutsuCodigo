@@ -17,3 +17,4 @@ Foi realizado o download do wsl e ambiente linux nas máquinas Windows para exec
 - `NULL` : ponteiro especificando o endereço de união;
 - `0` : conjunto de flags.
 
+![image](https://user-images.githubusercontent.com/74517849/189026612-345baf58-9db8-45bf-b1ce-d1182f7f8e14.png)
