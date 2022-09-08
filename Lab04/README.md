@@ -1,6 +1,3 @@
-## Execução
-Foi realizado o download do wsl e ambiente linux nas máquinas Windows para execução deste programa. 
-
 ## Código
 
 - `shmget` : retorna um identificador de memória compartilhada associada com uma Key específica;
@@ -17,4 +14,15 @@ Foi realizado o download do wsl e ambiente linux nas máquinas Windows para exec
 - `NULL` : ponteiro especificando o endereço de união;
 - `0` : conjunto de flags.
 
-![image](https://user-images.githubusercontent.com/74517849/189026612-345baf58-9db8-45bf-b1ce-d1182f7f8e14.png)
+## Execução
+Foi realizado o download do wsl e ambiente linux nas máquinas Windows para execução deste programa. Em seguida, foi utilizado o comando `gcc Lab04.c -o Lab04` no PowerShell para criação de um arquivo executável. Para rodar o arquivo exercutável, foi utilizado o comando `./Lab04`.
+
+> ![image](https://user-images.githubusercontent.com/74517849/189026612-345baf58-9db8-45bf-b1ce-d1182f7f8e14.png)
+
+- Primeiro foi lido o valor inicial da váriavel compartilhada;
+- Em segundo foi lido o valor do id do processo pai, que sempre muda ao ser executado, já que possui um valor aleatório maior que 0;
+- Em segundo foi lido o valor do id do processo filho, que sempre possui valor igual a 0;
+- Ao estar no processo filho, imprimiu a operação realizada de adicionar 2 ao valor da váriavel compartilhada, alterando para 3;
+- Ao estar no processo pai, imprimiu a operação realizada de multiplicar 4 ao valor da váriavel compartilhada, alterando para 12.
+
+
