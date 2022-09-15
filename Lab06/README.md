@@ -1,5 +1,5 @@
 ## Código
-- `#include <pthread.h>` Uma biblioteca que nos permite criar e manipular threads, denominado POSIX, as bibliotecas que implementam o POSIX são chamadas de Pthreads, e são utilizadas em sistemas do tipo Linux,Solaris e Windows.
+- `#include <pthread.h>` → Uma biblioteca que nos permite criar e manipular threads, denominado POSIX, as bibliotecas que implementam o POSIX são chamadas de Pthreads, e são utilizadas em sistemas do tipo Linux,Solaris e Windows.
 - `thread_count = strtol(argv[1], NULL, 10)` → Retorna o número de threads em execução, sendo a função “strtol” responsável por converter a parte inicial da string em str para um valor long int de acordo com a base fornecida.
 - `void* MultiplyThreads(void* rank)` →  função iniciada por pthread_create para salvar etapas da multiplicação entre matriz e vetor em threads. `void* thread_function ( void* args_p );` , sendo que args_p pode apontar para uma lista contendo um ou mais valores necessários para thread_function.
 - `long my_rank = (long) rank` → Método pthreads para a regra trapezoidal usando mutex. `long my_rank = (long)rank`.
