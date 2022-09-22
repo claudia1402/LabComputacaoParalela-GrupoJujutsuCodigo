@@ -13,7 +13,9 @@
 ### Execução
 
 - Foi realizado o download do wsl e ambiente linux nas máquinas Windows para execução deste programa. Em seguida, foi utilizado no Powershell o comando `gcc -pthread Lab06-Parte2.c -o Lab06-Parte2.c`. Por fim, `./Lab06-Parte 2`.
+- Caso 1: valores padronizados de número de threads e tamanho do vetor argv[]
 >![image](https://user-images.githubusercontent.com/83611462/191629161-bb4bb1f7-1696-4764-95b6-96a21d4b0a74.png)
+- Caso 2: valores do número de threads e tamanho do vetor argv[] são inseridos pelo usuário
 >![image](https://user-images.githubusercontent.com/83611462/191629171-6b1f0fc4-d1e3-41b1-9fc3-c5104d2358dd.png)
 
 
