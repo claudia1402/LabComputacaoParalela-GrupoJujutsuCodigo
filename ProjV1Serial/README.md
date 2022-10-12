@@ -10,5 +10,5 @@
 ## Execução
 
 - Entramos na maquina virtual da AWS, utilizamos as chaves `.ppk` e `.pem` fizemos o login com a senha do Unbuntu para executar paralelamente o script do serial de taylor 
-![image](https://user-images.githubusercontent.com/80297158/195467860-209785b3-7d95-4e3c-bebf-6db97f7e3fd3.png)
+
 
