@@ -1,7 +1,7 @@
 ## Código
 - incluimos as seguintes bibliotecas:` #include <stdio.h>`, `#include <math.h>`para a realizar o script.
 - Utilizamos a `long double` para poder armazenar mais variáveis
--` int i = 1; i <= c; i++` para aumentar gradativamente o i
+- ` int i = 1; i <= c; i++` para aumentar gradativamente o i
 
 
 ## Execução
