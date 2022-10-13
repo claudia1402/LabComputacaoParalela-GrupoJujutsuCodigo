@@ -1,4 +1,4 @@
-## Código
+## MAIN Código
 - incluimos as seguintes bibliotecas:`<stdio.h>`, `<math.h>`para a realizar o script. Basta inserir o `#include` antes da biblioteca;
 - Utilizamos a `long double` para poder armazenar mais variáveis do tipo Double; 
 - Utilizamos a `long int` para poder armazenar mais variáveis do tipo Int;
