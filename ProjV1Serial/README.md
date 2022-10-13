@@ -1,10 +1,13 @@
 ## Código
-- incluimos as seguintes bibliotecas:` #include <stdio.h>`, `#include <math.h>`para a realizar o script.
-- Utilizamos a `long double` para poder armazenar mais variáveis do tipo double 
-- Utilizamos a `long int` para poder armazenar mais variáveis do tipo int
-- ` int i = 1; i <= c; i++` para aumentar gradativamente o i
-- `soma` = `((pow(x, i))/calculoFatorial(i))` onde a soma vai ser igual potencia de x e i a sobre o calculoFatorial de i
-- 
+- incluimos as seguintes bibliotecas:`<stdio.h>`, `<math.h>`para a realizar o script. Basta inserir o `#include` antes da biblioteca;
+- Utilizamos a `long double` para poder armazenar mais variáveis do tipo Double; 
+- Utilizamos a `long int` para poder armazenar mais variáveis do tipo Int;
+- `int i = 1; i <= c; i++` para aumentar gradativamente o valor do contador criado;
+- `soma` = `((pow(x, i))/calculoFatorial(i))`, onde a soma será igual potência de "x" e "i" sobre o calculoFatorial de i
+## Explicação Teórica do Projeto V1
+O código consiste na criação de um programa capaz de executar a Série de Taylor, em que dados...
+
+
 
 
 ## Execução
