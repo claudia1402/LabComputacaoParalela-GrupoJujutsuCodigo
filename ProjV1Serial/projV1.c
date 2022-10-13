@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdbool.h>
 
 //criacao da funcao para calculo dos fatoriais na serie de taylor
 long double calculoFatorial(long double c) {
@@ -12,25 +12,32 @@ long double calculoFatorial(long double c) {
   return fatorial;
 }
 
-long double serieDeTaylor(long double x, long int t) {
+long double serieDeTaylor() {
   //definicao das variaveis de valor final calculado (s), soma das expressoes fracionarias (soma) e valor total da soma das expressoes fracionarias (valor)
   static long double s;
   long double soma;
   long double valor = 0;
-  //incrementa criacao das expressoes ate valor do tempo atingido, sendo cada expressao equivalente a x elevando a i dividido pelo fatorial de i
-  for(int i = 1; i <= t; i++) {
-    soma=((pow(x, i))/calculoFatorial(i));
-    valor+=soma;
+  long int t = 1;
+  long double resultados[1000];
+  //incrementa criacao das expressoes ate valor a limitacao do programa ser atingido, sendo cada expressao equivalente 1 dividido pelo fatorial de i
+  while (true) {
+    if(resultados[t-1] != resultados[t]) {
+      soma=(1/calculoFatorial(t));
+      valor+=soma;
+      s = 1 + valor;
+      resultados[t] = s;
+      t++;
+    }
+    else {
+      return t-1;
+      break;
+    }
   }
-  //adiciona o valor 1 inicial a soma total
-  s = 1 + valor;
-  return s;
+  printf("%Lf\n",s);
 }
 
 //chamada da funcao na main passando valores para parametros
 int main(void) {
-  long double valorNumInicial = 1;
-  long double tempoAtingido = 5;
-  printf("%Lf",serieDeTaylor(valorNumInicial, tempoAtingido));
+  printf("%Lf",serieDeTaylor());
   return 0;
 }
