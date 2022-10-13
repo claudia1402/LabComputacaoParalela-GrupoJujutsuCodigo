@@ -14,4 +14,4 @@ O código consiste na criação de um programa capaz de executar a Série de Tay
 - Foi realizado um Git clone na máquina AWS;
 - O comando `git checkout feature/alternative-version` foi realizado para acessar a respectiva branch;
 - A partir disso, para executar o código, foi utilizado os comandos `gcc projV1.c -o projV1`.
-- ![image](https://user-images.githubusercontent.com/80297158/195467985-7f257ab1-a587-41d1-af41-67c8a6f7bfd4.png)
+- ![image](https://user-images.githubusercontent.com/74517849/195493333-49d6d976-ee89-4be0-8ef1-5da81b28dcb8.png)
