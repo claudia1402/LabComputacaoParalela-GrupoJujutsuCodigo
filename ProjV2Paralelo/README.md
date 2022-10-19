@@ -12,5 +12,5 @@ O código consiste na criação de um programa capaz de executar a Série de Tay
 - Foi instalado na máquina AWS o `git` e `gcc` [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
-- A partir disso, para executar o código, foi utilizado os comandos `gcc projV1.c -o projV1 -lm`, visto que `-lm` é para a biblioteca `math`.
+- A partir disso, para executar o código, foi utilizado os comandos `gcc projV2.c -o projV2 -lm`, visto que `-lm` é para a biblioteca `math`.
 
