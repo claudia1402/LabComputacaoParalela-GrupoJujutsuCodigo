@@ -30,7 +30,6 @@ void *SerieDeTaylor(void *rank) {
     soma= 1/calculoFatorial(i);
     valor+=soma;
   }
-  //adiciona o valor 1 inicial a soma total
   printf("valor: %Lf \n", valor);
   return NULL;
 }
