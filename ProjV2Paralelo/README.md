@@ -1,9 +1,9 @@
 ## Código
-- O código [ProjV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial) foi utilizado como base para implementação paralela do programa. A partir disso, a paralelização foi realizada utilizando Threads, auxiliada pelo `include` de sua respectiva biblioteca. O valor S da Série de Taylor é encontrado, dado um tempo T que desta vez foi determinado como _1.000.000_, onde o valor S da Série de Taylor é encontrado sem que um valor T seja dado, sendo este incrementado e limitado pela capacidade computacional do programa, onde dessa vez estamos mais livres por estarmos trabalhando com diversos processadores. 
+- O código do [ProjV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial) foi utilizado como base para implementação paralela do programa. A partir disso, a paralelização foi realizada utilizando PThreads, auxiliada pelo `include` de sua respectiva biblioteca. O valor S da Série de Taylor é encontrado, dado um tempo T de valor _1.000.000_, como proposto pelo enunciado. 
 
-- incluimos as seguintes bibliotecas:`<stdio.h>`, `<math.h>`, `<pthread.h>`para a realizar o script. apenas necessitando inserir o `#include` antes da biblioteca;
-- Utilizamos a `long double` para poder armazenar mais variáveis do tipo Double; 
-- Utilizamos a `long int` para poder armazenar mais variáveis do tipo Int;
+- incluimos as seguintes bibliotecas:`<stdio.h>` e `<pthread.h>` para a realizar o script. Basta inserir `#include` antes da biblioteca que deseja;
+- Utilizamos `long double` para poder armazenar mais variáveis do tipo Double; 
+- Utilizamos `long int` para poder armazenar mais variáveis do tipo Int;
 - `int i = 1; i <= c; i++` para aumentar gradativamente o valor do contador criado;
 
 ## Explicação Teórica do Projeto V2
