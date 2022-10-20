@@ -8,7 +8,11 @@
 
 ## Explicação Teórica do Projeto V2
 O código consiste na criação de um programa capaz de executar a Série de Taylor, em que são definidos valores iniciais para o tempo máximo que a tartaruga conseguirá percorrer e o X que se refere ao valor inicial do númerador, setado como 1 para seguir de acordo com a fórmula _1/0! + 1/1! + 1/2! + 1/3!... 1/N!_. Os demais denominadores aumentam gradativamente. Detalhes do código estão explicados através de comentários, para facilitar a interpretação e entendimento.
+### Algumas Dificuldades Encontradas:
 
+- AWS ficou offiline durante muito tempo e uma instabilidade muito grande no servidor durante a semana.
+- `Core Dumped`, resultado de provavelmente por ser um valor muito grande a nosso logica nao suportou e ocorreu um estouro de memoria, necessitaremos de uma atualizacao na logica 
+ou um problema de estruturacao no loop pelo valor das variaveis aplicadas 
 ## Execução
 - Foi instalado na máquina AWS o `git` e `gcc` [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
