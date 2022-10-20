@@ -8,17 +8,22 @@
 
 ## Explicação Teórica do Projeto V2
 O código consiste na criação de um programa capaz de executar a Série de Taylor, em que são definidos valores iniciais para o tempo máximo que a tartaruga conseguirá percorrer e o X que se refere ao valor inicial do númerador, setado como 1 para seguir de acordo com a fórmula _1/0! + 1/1! + 1/2! + 1/3!... 1/N!_. Os demais denominadores aumentam gradativamente. Detalhes do código estão explicados através de comentários, para facilitar a interpretação e entendimento.
+
 ### Algumas Dificuldades Encontradas:
 
 - AWS ficou offiline durante muito tempo e uma instabilidade muito grande no servidor durante a semana.
 - `Core Dumped`, resultado de provavelmente por ser um valor muito grande a nosso logica nao suportou e ocorreu um estouro de memoria, necessitaremos de uma atualizacao na logica 
 ou um problema de estruturacao no loop pelo valor das variaveis aplicadas 
+
 ## Execução
 - Foi instalado na máquina AWS o `git` e `gcc` [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
-- A partir disso, para executar o código, foi utilizado os comandos `gcc projV2.c -o projV2 -lm`, visto que `-lm` é para a biblioteca `math`.
-### SpeedUp
-- Em relação ao speed up não foi possível calculá-lo devido a problemas de core dump, porém é possível estimar que aumentaria sua eficiência em cerca de 50% utilizando threads e 2 processadores, porém isso é apenas uma estimativa.
+- A partir disso, para executar o código, foi utilizado os comandos `gcc projV2.c -o projV2`.
 - ![image](https://user-images.githubusercontent.com/80297158/196845239-f89f9cae-dcdd-4703-a270-6c1839d908aa.png)
+
+### SpeedUp
+- Em relação ao speed up não foi possível calcular o da versão paralela devido a problemas de core dumped, porém é possível estimar que aumentaria sua eficiência devida a paralelização das expressões fracionárias.
+- Para realizar o cálculo do speedup, na chamada do arquivo de execução, deve-se inserir o comando de tempo do shell `time ./projV2`.
+- Aqui está um exemplo do cálculo do speedup da versão serial do código:
 - ![image](https://user-images.githubusercontent.com/80297158/196845408-a5b04a10-81c8-404f-9dcf-907fae6a02cd.png)
