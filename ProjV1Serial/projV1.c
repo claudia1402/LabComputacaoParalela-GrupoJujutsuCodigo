@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 //criacao da funcao para calculo dos fatoriais na serie de taylor
 long double calculoFatorial(long double c) {
@@ -17,9 +16,9 @@ long double serieDeTaylor(long double x, long int t) {
   static long double s;
   long double soma;
   long double valor = 0;
-  //incrementa criacao das expressoes ate valor do tempo atingido, sendo cada expressao equivalente a x elevando a i dividido pelo fatorial de i
+  //incrementa criacao das expressoes ate valor do tempo atingido, sendo cada expressao equivalente a 1 dividido pelo fatorial de i
   for(int i = 1; i <= t; i++) {
-    soma=((pow(x, i))/calculoFatorial(i));
+    soma = 1/calculoFatorial(i);
     valor+=soma;
   }
   //adiciona o valor 1 inicial a soma total
