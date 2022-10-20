@@ -18,7 +18,7 @@ O código consiste na criação de um programa capaz de executar a Série de Tay
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
 - A partir disso, para executar o código, foi utilizado os comandos `gcc projV2.c -o projV2`.
-- Por fim, após estes comandos há a chamada do arquivo de execuçao com `./projV2`
+- Por fim, após estes comandos há a chamada do arquivo de execução com `./projV2`
 ![image](https://user-images.githubusercontent.com/80297158/196845239-f89f9cae-dcdd-4703-a270-6c1839d908aa.png)
 
 ### SpeedUp
