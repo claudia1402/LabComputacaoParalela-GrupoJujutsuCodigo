@@ -20,10 +20,10 @@ ou um problema de estruturacao no loop pelo valor das variaveis aplicadas
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
 - A partir disso, para executar o código, foi utilizado os comandos `gcc projV2.c -o projV2`.
-- ![image](https://user-images.githubusercontent.com/80297158/196845239-f89f9cae-dcdd-4703-a270-6c1839d908aa.png)
+![image](https://user-images.githubusercontent.com/80297158/196845239-f89f9cae-dcdd-4703-a270-6c1839d908aa.png)
 
 ### SpeedUp
 - Em relação ao speed up não foi possível calcular o da versão paralela devido a problemas de core dumped, porém é possível estimar que aumentaria sua eficiência devida a paralelização das expressões fracionárias.
 - Para realizar o cálculo do speedup, na chamada do arquivo de execução, deve-se inserir o comando de tempo do shell `time ./projV2`.
 - Aqui está um exemplo do cálculo do speedup da versão serial do código:
-- ![image](https://user-images.githubusercontent.com/80297158/196845408-a5b04a10-81c8-404f-9dcf-907fae6a02cd.png)
+![image](https://user-images.githubusercontent.com/80297158/196845408-a5b04a10-81c8-404f-9dcf-907fae6a02cd.png)
