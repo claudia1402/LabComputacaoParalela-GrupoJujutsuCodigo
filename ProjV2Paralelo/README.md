@@ -18,4 +18,7 @@ ou um problema de estruturacao no loop pelo valor das variaveis aplicadas
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
 - A partir disso, para executar o código, foi utilizado os comandos `gcc projV2.c -o projV2 -lm`, visto que `-lm` é para a biblioteca `math`.
-
+### SpeedUp
+- Em relação ao speed up não foi possível calculá-lo devido a problemas de core dump, porém é possível estimar que aumentaria sua eficiência em cerca de 50% utilizando threads e 2 processadores, porém isso é apenas uma estimativa.
+- ![image](https://user-images.githubusercontent.com/80297158/196845239-f89f9cae-dcdd-4703-a270-6c1839d908aa.png)
+- ![image](https://user-images.githubusercontent.com/80297158/196845408-a5b04a10-81c8-404f-9dcf-907fae6a02cd.png)
