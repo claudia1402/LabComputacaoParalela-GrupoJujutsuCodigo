@@ -13,7 +13,7 @@ long double calculoFatorial(long double c) {
     fatorial *= i;
     }
   }
-  //criacao da logica da multiplicacao dos valores de 1 a c, gerando o resultado do faltorial de c
+  //criacao da logica da multiplicacao dos valores de 1 a c, gerando o resultado do fatorial de c
   return fatorial;
 }
 
