@@ -7,7 +7,7 @@
 - `int i = 1; i <= c; i++` para aumentar gradativamente o valor do contador criado;
 
 ## Explicação Teórica do Projeto V2
-O código consiste na criação de um programa capaz de executar a Série de Taylor, em que são definidos valores iniciais para o tempo máximo que a tartaruga conseguirá percorrer e o X que se refere ao valor inicial do númerador, setado como 1 para seguir de acordo com a fórmula _1/1! + 1/2! + 1/3!... 1/N!_. Os demais denominadores aumentam gradativamente. Detalhes do código estão explicados através de comentários, para facilitar a interpretação e entendimento.
+O código consiste na criação de um programa capaz de executar a Série de Taylor, em que são definidos valores iniciais para o tempo máximo que a tartaruga conseguirá percorrer e o X que se refere ao valor inicial do númerador, setado como 1 para seguir de acordo com a fórmula _1/0! + 1/1! + 1/2! + 1/3!... 1/N!_. Os demais denominadores aumentam gradativamente. Detalhes do código estão explicados através de comentários, para facilitar a interpretação e entendimento.
 
 ## Execução
 - Foi instalado na máquina AWS o `git` e `gcc` [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
