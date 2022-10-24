@@ -18,14 +18,14 @@ Serão necessários 6 processadores para conseguir o tempo mínimo de execução
 ![image](https://user-images.githubusercontent.com/74517849/197431672-61c31dbc-c938-4ca0-a1e7-e0670c422296.png)
 
 ### 4. Qual é o grau máximo de concorrência?
-O grau máximo de concorrência é 4. Uma vez que elas dependem entre elas para serem executadas, onde a _T4_ somente pode ser executada depois da _T3_, seguindo assim até _T1_.
+O grau máximo de concorrência é 4. Uma vez que as tarefas são dependentes entre si para serem executadas, onde a _T4_ somente pode ser executada depois da _T3_, seguindo assim até _T1_.
 
 ![image](https://user-images.githubusercontent.com/74517849/197432109-63ffe831-6162-40f8-a16a-9f7bb4672a86.png)
 
 
 
 ### 5. Qual o paralelismo médio?
-O paralelismo médio será 3,34, sendo esse valor equivalente as somatórias do número de tarefas em _T1_ a _T3_, dividido por 3.
+O paralelismo médio será 3,34, sendo esse valor equivalente as somatórias do número de tarefas em _T1_ à _T3_, dividido por 3.
 
 ![image](https://user-images.githubusercontent.com/74517849/197431814-caca08a1-4de6-43ab-a404-3143905cec29.png)
 
