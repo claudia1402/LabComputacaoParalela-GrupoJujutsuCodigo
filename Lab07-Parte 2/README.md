@@ -48,6 +48,6 @@ LOCK – 2 NÚCLEOS 5 THREADS
 LOCK – 2 NÚCLEOS 10 THREADS
  ![image](https://user-images.githubusercontent.com/74517849/200224066-edbacdd8-0da7-41b0-9911-c87e10326375.png)
 
-
-
+## Gráfico de Comparação
+![image](https://user-images.githubusercontent.com/74517849/200227904-8ae69b8a-0a85-4122-b5a2-daf64fa87dfc.png)
 
