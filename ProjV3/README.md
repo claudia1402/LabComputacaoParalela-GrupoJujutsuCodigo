@@ -4,6 +4,8 @@
 - `for(int i = 1; i <= c; i++) {fatorial *= i;` criamos o fatorial da série de Taylor, esse fatorial, sera somado a _1_.
 - `const int N=10000; ` Utilizamos essa variável estática para chamarmos o N que foi o máximo atingido com o poder computacional em mãos 
 - `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
+- `#pragma omp set_num_threads(N)` Onde esse N é o número a ser escolhido de _Threads_
+- `#pragma omp parallel private(local_sum) shared(sum) ` para paralelizarmos a soma, compartilhando-a entre as _Threads_
 
 ### omp `critical`
 Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
