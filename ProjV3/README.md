@@ -12,6 +12,6 @@ Esta versão foi realizada no Laboratório anterior. Caso queira analisar o cód
 
 ## Limitações
 - Até o momento de desenvolvimento deste projeto, a AWS Learner Lab não nos permitiu criar instâncias com mais de 2 núcleos. Dessa forma, ficamos limitados a comparar o tempo de execução dos programas apenas com 1 processador e 2 processadores, sendo que foi pedido uma comparação de tempo de execução com 1, 2, 4  e 8 processadores para a versão paralela, portanto fizemos a execução com 1 e 2 processadores e 5, 10 e 15 _threads_
-- Ademais, nosso código requisitava a entrada de informações por parte do usuário, sendo que esse fator pode ter afetado os resultados do tempo de speedup, para contornarmos esse imprevisto criamos 3 versões com _3_ quantidades diferentes de _threads_ [5 Thread](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/blob/main/ProjV3/projv35.c), [10 Threads](), [15 Threads]()
+- Ademais, nosso código requisitava a entrada de informações por parte do usuário, sendo que esse fator pode ter afetado os resultados do tempo de speedup, para contornarmos esse imprevisto criamos 3 versões com _3_ quantidades diferentes de _threads_ [5 Thread](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/blob/main/ProjV3/projv35.c), [10 Threads](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/blob/main/ProjV3/projv310.c), [15 Threads]()
 
 ## Prints de Execução
