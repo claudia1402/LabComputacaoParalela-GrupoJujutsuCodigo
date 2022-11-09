@@ -6,6 +6,7 @@
 - `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
 - `#pragma omp set_num_threads(N)` Onde esse N é o número a ser escolhido de _Threads_
 - `#pragma omp parallel private(local_sum) shared(sum) ` para paralelizarmos a soma, compartilhando-a entre as _Threads_
+- Por fim em pragma omp for no laço `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)`o soma encrementa e é adicionada a _1_ como mencionado anteriormente.
 
 ### omp `critical`
 Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
