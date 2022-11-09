@@ -1,4 +1,19 @@
-# Explicação Critical
+# Explicação 
+
+### Utilização 
+- `Critical`A diretiva omp critical identifica uma seção de código que deve ser executada por uma única thread por vez.
+
+- Uma thread espera no início de uma região crítica identificada por um determinado nome até que nenhuma outra thread no programa esteja executando uma região crítica com esse mesmo nome. As seções críticas não especificamente nomeadas pela invocação da diretiva crítica omp são mapeadas para o mesmo nome não especificado.
+
+### Sintaxe 
+
+![image](https://user-images.githubusercontent.com/80297158/200960948-288b6886-4ec6-4c4e-8aa3-16f9d55697af.png)
+
+
+- Onde o nome pode ser usado opcionalmente para identificar a região crítica. Identificadores que nomeiam uma região crítica têm ligação externa e ocupam um espaço de nomes distinto daquele usado por identificadores comuns.
+
+
+
 
 # Comparações
 
