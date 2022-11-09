@@ -16,10 +16,13 @@ Esta versão consiste de uma realizada em Laboratório anterior. Caso queira ana
 ## Prints de Execução
 
 ### 1 Processador e 5 Threads
+![image](https://user-images.githubusercontent.com/80297158/200951298-a95cb6f5-281a-41e8-8e62-b1a0cd55a5c4.png)
 
 ### 1 Processador e 10 Threads
+![image](https://user-images.githubusercontent.com/80297158/200951371-5db40a5a-f15a-42ce-92e6-15423271e4d1.png)
 
 ### 1 Processador e 15 Threads
+![image](https://user-images.githubusercontent.com/80297158/200951472-2e95b2bf-08ca-4b01-a92c-52c8ae6314d5.png)
 
 ### 2 Processador e 5 Threads
 ![image](https://user-images.githubusercontent.com/80297158/200951035-b02d1d0d-c5e4-4fcb-8fce-7b5b06e2d11b.png)
