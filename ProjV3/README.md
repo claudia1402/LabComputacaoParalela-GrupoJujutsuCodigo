@@ -22,6 +22,7 @@ Esta versão consiste de uma realizada em Laboratório anterior. Caso queira ana
 ### 1 Processador e 15 Threads
 
 ### 2 Processador e 5 Threads
+![image](https://user-images.githubusercontent.com/80297158/200950413-73068bc0-60fb-4ee4-885f-59211523f1ab.png)
 
 ### 2 Processador e 10 Threads
 
