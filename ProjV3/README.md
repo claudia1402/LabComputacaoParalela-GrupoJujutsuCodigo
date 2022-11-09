@@ -8,10 +8,10 @@ Esta versão foi realizada no Laboratório anterior. Caso queira analisar o cód
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
 - A partir disso, para executar o código, foi utilizado os comandos `gcc trapezioLock.c -o trapezioLock -fopenmp -lm`
-- Por fim, após estes comandos há a chamada do arquivo de execução com `./` para 10 Threads, e `./trapezioLock 5` para 5 Threads;
+- Por fim, após estes comandos há a chamada do arquivo de execução com `./` para 1 Threads, e `./trapezioLock 5` para 5 Threads;
 
 ## Limitações
-- Até o momento de desenvolvimento deste projeto, a AWS Learner Lab não nos permitiu criar instâncias com mais de 2 núcleos. Dessa forma, ficamos limitados a comparar o tempo de execução dos programas apenas com 1 processador e 2 processadores, sendo que foi pedido uma comparação de tempo de execução com 1, 2, 4  e 8 processadores para a versão paralela, portanto fizemos a execução com 1 e 2 processadores e 1, 5 e 10 _threads_
-- Ademais, nosso código requisitava a entrada de informações por parte do usuário, sendo que esse fator pode ter afetado os resultados do tempo de speedup, para contornarmos esse imprevisto criamos 3 versões com _3_ quantidades diferentes de _threads_ [1 Thread](), [5 Threads](), [10 Threads]()
+- Até o momento de desenvolvimento deste projeto, a AWS Learner Lab não nos permitiu criar instâncias com mais de 2 núcleos. Dessa forma, ficamos limitados a comparar o tempo de execução dos programas apenas com 1 processador e 2 processadores, sendo que foi pedido uma comparação de tempo de execução com 1, 2, 4  e 8 processadores para a versão paralela, portanto fizemos a execução com 1 e 2 processadores e 5, 10 e 15 _threads_
+- Ademais, nosso código requisitava a entrada de informações por parte do usuário, sendo que esse fator pode ter afetado os resultados do tempo de speedup, para contornarmos esse imprevisto criamos 3 versões com _3_ quantidades diferentes de _threads_ [5 Thread](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/blob/main/ProjV3/projv35.c), [10 Threads](), [15 Threads]()
 
 ## Prints de Execução
