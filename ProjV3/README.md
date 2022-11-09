@@ -1,5 +1,6 @@
 ## Explicação 
-- Neste laboratório, contruido uma versão paralela com `OpenMP` e` critical`. A partir disso, utilizamos `#pragma omp critical` e  (que ocasiona na utilização de 
+- Neste laboratório, contruido uma versão paralela com `OpenMP` e` critical`. A partir disso, utilizamos a bibliotecas  e  (que ocasiona na utilização de `OpenMp
+ ``for(int i = 1; i <= c; i++) {fatorial *= i;` criamos o fatorial da série de Taylor, esse fatorial, sera somado a _1_
 ### omp `critical`
 Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
 
@@ -7,7 +8,7 @@ Esta versão consiste de uma realizada em Laboratório anterior. Caso queira ana
 - Foi instalado na máquina AWS o git e gcc. [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
-- A partir disso, para executar o código, foi utilizado os comandos `gcc trapezioLock.c -o trapezioLock -fopenmp -lm`
+- A partir disso, para executar o código, foi utilizado os comandos `gcc ProjV3.c -o ProjV3 -fopenmp -lm`
 - Por fim, após estes comandos há a chamada do arquivo de execução com `./ProjV3`
 
 ## Limitações
