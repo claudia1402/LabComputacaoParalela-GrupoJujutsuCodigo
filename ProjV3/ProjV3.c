@@ -14,7 +14,7 @@ long double calculoFatorial(long double c) {
 
 int main() {
   
-  const int N=100000; 
+  const int N=10000; 
 
   long double local_sum, sum; 
 
