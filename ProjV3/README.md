@@ -1,6 +1,10 @@
 ## Explicação 
 - Neste laboratório, contruido uma versão paralela com `OpenMP` e` critical`. A partir disso, utilizamos a bibliotecas  e  (que ocasiona na utilização de `OpenMp
- ``for(int i = 1; i <= c; i++) {fatorial *= i;` criamos o fatorial da série de Taylor, esse fatorial, sera somado a _1_
+ `)
+- `for(int i = 1; i <= c; i++) {fatorial *= i;` criamos o fatorial da série de Taylor, esse fatorial, sera somado a _1_.
+- `const int N=10000; ` Utilizamos essa variável estática para chamarmos o N que foi o máximo atingido com o poder computacional em mãos 
+- `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
+
 ### omp `critical`
 Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
 
