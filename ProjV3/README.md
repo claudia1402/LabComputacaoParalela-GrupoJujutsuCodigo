@@ -28,3 +28,5 @@ Esta versão consiste de uma realizada em Laboratório anterior. Caso queira ana
 ![image](https://user-images.githubusercontent.com/80297158/200950541-bbe935cf-6d68-43b0-b94e-60b7797dc5a3.png)
 
 ### 2 Processador e 15 Threads
+![image](https://user-images.githubusercontent.com/80297158/200950742-acc73ef9-a59b-45f8-9710-93dda278822a.png)
+
