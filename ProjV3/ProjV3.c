@@ -14,10 +14,11 @@ long double calculoFatorial(long double c) {
 
 int main() {
 
-  const int N=100000; 
+  const int N=100; 
 
   long double local_sum, sum; 
-  
+
+#pragma omp set_num_threads(100);
 #pragma omp parallel private(local_sum) shared(sum) 
   { 
     local_sum = 0; 
