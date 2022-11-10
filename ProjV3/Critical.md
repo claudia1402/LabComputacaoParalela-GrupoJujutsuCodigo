@@ -1,7 +1,7 @@
 # Explicação 
 
 ### Utilização 
-- `Critical`A diretiva `omp critical` identifica uma seção de código que deve ser executada por uma única _Thread_ por vez.
+- `Critical`: A diretiva `omp critical` identifica uma seção de código que deve ser executada por uma única _Thread_ por vez.
 
 - Uma thread espera no início de uma região crítica identificada por um determinado nome até que nenhuma outra thread no programa esteja executando uma região crítica com esse mesmo nome. As seções críticas não especificamente nomeadas pela invocação da diretiva crítica omp são mapeadas para o mesmo nome não especificado.
 
