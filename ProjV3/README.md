@@ -1,11 +1,11 @@
 ## Explicação 
 - Neste laboratório, contruímos uma versão paralela com `OpenMP` e` critical`. A partir disso, foi incluso o `omp.h` para permitir o uso dos recursos da biblioteca omp.
-- `for(int i = 1; i <= c; i++) {fatorial *= i;` criamos o fatorial da série de Taylor, esse fatorial, sera somado a _1_.
+- `for(int i = 1; i <= c; i++) {fatorial *= i;` criamos a lógica da função fatorial, que será utilizada mais para fente pela série de Taylor.
 - `const int N=10000; ` Utilizamos essa variável estática para chamarmos o N que foi o máximo atingido com o poder computacional em mãos 
 - `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
-- `#pragma omp set_num_threads(N)` Onde esse N é o número a ser escolhido de _Threads_
-- `#pragma omp parallel private(local_sum) shared(sum) ` para paralelizarmos a soma, compartilhando-a entre as _Threads_
-- Por fim em pragma omp for no laço `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)`o soma encrementa e é adicionada a _1_ como mencionado anteriormente.
+- `#pragma omp set_num_threads(10)` Onde esse valor 10 se refere ao número escolhido de _Threads_
+- `#pragma omp parallel private(local_sum) shared(sum) ` para paralelizarmos a soma, associando uma memória privada a variável `local_sum`, que mais para frente tem os valores finais inseridos na memória compartilhada associada a variável `sum`.
+- Por fim em `pragma omp for`, no laço `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)` a soma incrementa, resultando na soma das frações da série de Taylor.
 
 ### omp `critical`
 Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
