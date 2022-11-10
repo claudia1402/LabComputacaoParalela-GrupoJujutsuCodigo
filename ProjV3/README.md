@@ -5,7 +5,7 @@
 - `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
 - `#pragma omp set_num_threads(10)` Onde esse valor 10 se refere ao número escolhido de _Threads_
 - `#pragma omp parallel private(local_sum) shared(sum) ` para paralelizarmos a soma, associando uma memória privada a variável `local_sum`, que mais para frente tem os valores finais inseridos na memória compartilhada associada a variável `sum`.
-- Por fim em `pragma omp for`, no laço `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)` a soma incrementa, resultando na soma das frações da série de Taylor.
+- Por fim em `pragma omp for`, no laço `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)` a soma incrementa, resultando na soma das frações da série de Taylor (1/0! + 1/1! + 1/2! + 1/3!... 1/N!).
 
 ### omp `critical`
 Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
