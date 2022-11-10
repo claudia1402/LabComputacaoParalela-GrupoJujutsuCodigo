@@ -1,6 +1,5 @@
 ## Explicação 
-- Neste laboratório, contruido uma versão paralela com `OpenMP` e` critical`. A partir disso, utilizamos a bibliotecas  e  (que ocasiona na utilização de `OpenMp
- `)
+- Neste laboratório, contruímos uma versão paralela com `OpenMP` e` critical`. A partir disso, foi incluso o `omp.h` para permitir o uso dos recursos da biblioteca omp.
 - `for(int i = 1; i <= c; i++) {fatorial *= i;` criamos o fatorial da série de Taylor, esse fatorial, sera somado a _1_.
 - `const int N=10000; ` Utilizamos essa variável estática para chamarmos o N que foi o máximo atingido com o poder computacional em mãos 
 - `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
@@ -15,8 +14,8 @@ Esta versão consiste de uma realizada em Laboratório anterior. Caso queira ana
 - Foi instalado na máquina AWS o git e gcc. [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
-- A partir disso, para executar o código, foi utilizado os comandos `gcc ProjV3.c -o ProjV3 -fopenmp -lm`
-- Por fim, após estes comandos há a chamada do arquivo de execução com `./ProjV3`
+- A partir disso, para executar o código, foi utilizado os comandos `gcc ProjV3.c -o ProjV3 -fopenmp`
+- Por fim, após estes comandos há a chamada do arquivo de execução e seu speedup com `time ./ProjV3`
 
 ## Limitações
 - Até o momento de desenvolvimento deste projeto, a AWS Learner Lab não nos permitiu criar instâncias com mais de 2 núcleos. Dessa forma, ficamos limitados a comparar o tempo de execução dos programas apenas com 1 processador e 2 processadores, sendo que foi pedido uma comparação de tempo de execução com 1, 2, 4  e 8 processadores para a versão paralela, portanto fizemos a execução com 1 e 2 processadores e 5, 10 e 15 _threads_
