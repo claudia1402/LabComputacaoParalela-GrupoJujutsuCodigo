@@ -1,21 +1,20 @@
 ## Explicação 
 - Neste laboratório, contruímos uma versão paralela com `OpenMP` e` critical`. A partir disso, foi incluso o `omp.h` para permitir o uso dos recursos da biblioteca omp.
-- `for(int i = 1; i <= c; i++) {fatorial *= i;` criamos a lógica da função fatorial, que será utilizada mais para fente pela série de Taylor.
-- `const int N=10000; ` Utilizamos essa variável estática para chamarmos o N que foi o máximo atingido com o poder computacional em mãos 
-- `long double local_sum` Assim alocamos a soma local com mais espaço na memória por usar uma variável do tipo long double
-- `#pragma omp set_num_threads(10)` Onde esse valor 10 se refere ao número escolhido de _Threads_
-- `#pragma omp parallel private(local_sum) shared(sum) ` para paralelizarmos a soma, associando uma memória privada a variável `local_sum`, que mais para frente tem os valores finais inseridos na memória compartilhada associada a variável `sum`.
-- Por fim em `pragma omp for`, no laço `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)` a soma incrementa, resultando na soma das frações da série de Taylor (1/0! + 1/1! + 1/2! + 1/3!... 1/N!).
-
-### omp `critical`
-Esta versão consiste de uma realizada em Laboratório anterior. Caso queira analisar o código, basta acessar o [LabV1Serial](https://github.com/claudia1402/LabComputacaoParalela-GrupoJujutsuCodigo/tree/main/ProjV1Serial). porém paralelizada de um novo modo utilizando `OpenMP` e `Critical`
+- `for(int i = 1; i <= c; i++) {fatorial *= i`: criamos a lógica da função fatorial, que será utilizada mais para fente pela série de Taylor.
+- `const int N=10000`: utilizamos essa variável estática para chamarmos o N, referente ao tempo máximo que a tartaruga conseguirá percorrer, que foi o máximo atingido pela estrutura atual paralelizada. 
+- `long double local_sum`: alocar a soma local com mais espaço na memória por usar uma variável do tipo long double
+- `#pragma omp set_num_threads(10)`: valor 10 se refere ao número escolhido de _Threads_
+- `#pragma omp parallel private(local_sum) shared(sum) `: paraleliza a soma, associando uma memória privada a variável `local_sum`, que mais para frente tem os valores finais inseridos na memória compartilhada associada a variável `sum`.
+- `pragma omp for`: instrui o compilador a distribuir iterações de loop dentro da equipe de threads que encontra a construção de compartilhamento de trabalho.
+- `for (int i = 0; i <= N; i++)` e `local_sum += 1/calculoFatorial(i)`: soma incrementa, resultando na soma das frações da série de Taylor (1/0! + 1/1! + 1/2! + 1/3!... 1/N!).
+- `#pragma omp critical`: identifica uma seção de código que deve ser executada por uma única thread por vez.
 
 ## Execução em instâncias com 1 e 2 processadores
 - Foi instalado na máquina AWS o git e gcc. [Como Instalar GCC no Ubuntu](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/);
 - Ao gerar a chave SSH no AWS, linkamos a chave com o Github para poder clonar o repositório;
 - Foi realizado um Git clone na máquina AWS;
 - A partir disso, para executar o código, foi utilizado os comandos `gcc ProjV3.c -o ProjV3 -fopenmp`
-- Por fim, após estes comandos há a chamada do arquivo de execução e seu speedup com `time ./ProjV3`
+- Por fim, após estes comandos há a chamada do arquivo de execução e seu _speedup_ com `time ./ProjV3`
 
 ## Limitações
 - Até o momento de desenvolvimento deste projeto, a AWS Learner Lab não nos permitiu criar instâncias com mais de 2 núcleos. Dessa forma, ficamos limitados a comparar o tempo de execução dos programas apenas com 1 processador e 2 processadores, sendo que foi pedido uma comparação de tempo de execução com 1, 2, 4  e 8 processadores para a versão paralela, portanto fizemos a execução com 1 e 2 processadores e 5, 10 e 15 _threads_
